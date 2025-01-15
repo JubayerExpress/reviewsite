@@ -34,3 +34,15 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
+<button id="logout">Logout</button>
+
+<script>
+  document.getElementById('logout').addEventListener('click', () => {
+    auth.signOut().then(() => {
+      alert("Logged out successfully!");
+      window.location.href = 'login.html';
+    });
+  });
+</script>
+
