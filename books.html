@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Books</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Book List</h2>
+            <div id="filters">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="all">All</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <label for="author">Author:</label>
+                <select id="author">
+                    <option value="all">All</option>
+                    <option value="author1">Author 1</option>
+                    <option value="author2">Author 2</option>
+                </select>
+            </div>
+            <div id="book-list">
+                <!-- Books will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Community</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
