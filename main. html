@@ -1,14 +1,15 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ReviewShelf - Home</title>
+    <title>Book Review Community</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <h1>Welcome to Book Review Community</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,42 +22,203 @@
         </nav>
     </header>
     <main>
-        <section id="featured">
-            <h1>Welcome to ReviewShelf</h1>
-            <p>Your go-to community for book reviews, recommendations, and book purchases.</p>
-            <a href="signup.html" class="btn">Join Now</a>
-        </section>
-        <section id="latest-reviews">
-            <h2>Latest Reviews</h2>
-            <div class="review-cards">
-                <div class="card">
-                    <h3>The Great Gatsby</h3>
-                    <p>"A mesmerizing and tragic tale of love and loss..."</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="card">
-                    <h3>1984</h3>
-                    <p>"A chilling view of a dystopian future..."</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-        </section>
-        <section id="popular-books">
-            <h2>Popular Books</h2>
-            <div class="book-grid">
-                <div class="book-item">
-                    <h3>To Kill a Mockingbird</h3>
-                    <img src="mockingbird.jpg" alt="To Kill a Mockingbird">
-                </div>
-                <div class="book-item">
-                    <h3>The Catcher in the Rye</h3>
-                    <img src="catcher.jpg" alt="The Catcher in the Rye">
-                </div>
+        <section>
+            <h2>Latest Posts</h2>
+            <div id="posts">
+                <!-- Admin posts and user reviews will be dynamically loaded here -->
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 ReviewShelf | <a href="privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2025 Book Review Community</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
+<!-- books.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Books</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Book List</h2>
+            <div id="filters">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="all">All</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+                <label for="author">Author:</label>
+                <select id="author">
+                    <option value="all">All</option>
+                    <option value="author1">Author 1</option>
+                    <option value="author2">Author 2</option>
+                </select>
+            </div>
+            <div id="book-list">
+                <!-- Books will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Community</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- authors.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Authors</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Author List</h2>
+            <div id="author-list">
+                <!-- Authors will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Community</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- reviews.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Latest Reviews</h2>
+            <div id="review-list">
+                <!-- User reviews will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Community</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Book Review Community</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></
