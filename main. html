@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ReviewShelf - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured">
+            <h1>Welcome to ReviewShelf</h1>
+            <p>Your go-to community for book reviews, recommendations, and book purchases.</p>
+            <a href="signup.html" class="btn">Join Now</a>
+        </section>
+        <section id="latest-reviews">
+            <h2>Latest Reviews</h2>
+            <div class="review-cards">
+                <div class="card">
+                    <h3>The Great Gatsby</h3>
+                    <p>"A mesmerizing and tragic tale of love and loss..."</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>1984</h3>
+                    <p>"A chilling view of a dystopian future..."</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section id="popular-books">
+            <h2>Popular Books</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <h3>To Kill a Mockingbird</h3>
+                    <img src="mockingbird.jpg" alt="To Kill a Mockingbird">
+                </div>
+                <div class="book-item">
+                    <h3>The Catcher in the Rye</h3>
+                    <img src="catcher.jpg" alt="The Catcher in the Rye">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ReviewShelf | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
