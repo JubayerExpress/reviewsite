@@ -1,95 +1,131 @@
-/* styles.css */
+/* styles.css - Professional Look */
 
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f7f9fc;
+    color: #333;
 }
 
+/* Header Styling */
 header {
-    background-color: #4CAF50;
-    padding: 1rem;
-    color: white;
+    background-color: #1e3a8a;
+    padding: 1rem 0;
+    color: #fff;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
 }
 
+/* Navigation Styles */
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
+/* Main Content Styling */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-}
-
-#signup-form {
-    background-color: white;
+    min-height: 70vh;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
 }
 
-#signup-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-#signup-form input {
+/* Form Styles */
+form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-#signup-form button {
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+form input {
     width: 100%;
     padding: 0.75rem;
-    background-color: #4CAF50;
-    color: white;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1e3a8a;
+    color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#signup-form button:hover {
-    background-color: #45a049;
+form button:hover {
+    background-color: #162a5a;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    position: absolute;
+    background-color: #1e3a8a;
+    color: #fff;
+    position: relative;
     width: 100%;
     bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
 }
