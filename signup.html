@@ -66,3 +66,20 @@
   const analytics = getAnalytics(app);
 </script>
 
+<script>
+  document.getElementById('signup-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    auth.createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        alert("User created successfully!");
+        window.location.href = 'login.html'; // Redirect to login page
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  });
+</script>
